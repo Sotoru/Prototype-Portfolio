@@ -2,10 +2,30 @@ h1{
     font-family: 'Montserrat';
     text-align: center;
     color: white;
+    font-size: 2em;
 
 }
 
 .s1 {
-    background: url('../images/one.png');
+    background: url('../images/1.png');
     background-size: cover;
+}
+
+.s2 {
+    background: url('../images/2.png');
+    background-size: cover;
+}
+.s3 {
+    background: url('../images/3.png');
+    background-size: cover;
+}
+
+span {
+    background-color: white !important;
+    
+}
+
+#fp-nav ul li a.active span{
+    width: 20px;
+    height: 20px;
 }

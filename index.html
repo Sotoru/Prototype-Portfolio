@@ -10,7 +10,7 @@
         integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
         crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="css/main.scss">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -18,7 +18,19 @@
     <div id="fullpage">
 
         <div class="section s1">
-            <h1>the first section</h1>
+            <h1>the first section </h1>
+
+            <div class="slide">
+                <h1>The first slide</h1>
+            </div>
+
+            <div class="slide">
+                <h1>The second slide</h1>
+            </div>
+
+            <div class="slide">
+                <h1>The third slide</h1>
+            </div>
 
         </div>
 
@@ -42,7 +54,14 @@
     <script>
 
         new fullpage('#fullpage', {
-            autoscrolling: true
+            autoscrolling: true,
+            navigation: true,
+            anchors: ['section1','section2','section3'],
+            navigationTooltips: ['Home', 'About', 'Contact'],
+            showActiveTooltip: true,
+            scrollingSpeed: 1000,
+            controlArrows: false,
+            slidesNavigation: true
         })
 
     </script>
